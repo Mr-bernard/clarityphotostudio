@@ -1,0 +1,17 @@
+{
+  "name": "myproject",
+  "version": "1.0.0",
+  "description": "Static site with theme toggle, gallery filter, and pricing calculator",
+  "main": "js/script.js",
+  "scripts": {
+    "build": "npm run minify-css && npm run minify-js",
+    "minify-css": "cleancss -o css/style.min.css css/style.css",
+    "minify-js": "terser js/script.js -o js/script.min.js --compress --mangle"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "clean-css-cli": "^5.0.0",
+    "terser": "^5.0.0"
+  }
+}
